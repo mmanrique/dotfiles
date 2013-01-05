@@ -1,34 +1,51 @@
-export JAVA_HOME="/usr/lib/jvm/jdk1.6.0_38/"
-. /home/mmanrique/z/z.sh
+#export JAVA_HOME="/usr/lib/jvm/.."
+. /home/{username}/z/z.sh
 
-export MAVEN_HOME="/opt/maven-3.0.4/"
-export MAVEN_OPTS="-Xmx2G -Xms2G -XX:PermSize=128M -XX:MaxPermSize=256m"
+#export MAVEN_HOME="/opt/maven-../"
+#export MAVEN_OPTS="-Xmx2G -Xms2G -XX:PermSize=128M -XX:MaxPermSize=256m"
 
-export ANT_HOME="/opt/apache-ant-1.8.4/"
-export ANT_OPTS=-Xmx768m
-export M2_HOME="/opt/maven-3.0.4/"
+#export ANT_HOME="/opt/apache-ant-../"
+#export ANT_OPTS=-Xmx768m
+#export M2_HOME="/opt/maven-../"
 
 export PATH=$PATH:$JAVA_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin
-
-alias vpn="sudo /home/mmanrique/juniper_network/vpn.sh"
-
-alias idea="/home/mmanrique/IDE/idea-IU-107.777/bin/idea.sh &"
+#tools I use
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
+alias ~="cd ~"
 alias -- -="cd -"
+#Git alias to make my life easier
 alias grh="git reset --hard"
 alias gc="git clone "
-alias gck="git checkout "
+alias gchk="git checkout"
+alias gb="git branch"
+alias ga="git add"
+alias gd="git branch -D"
+alias grm="git rm"
+alias gcm="git commit"
+alias gcl="git clone"
+alias gpl="git pull"
+#alias gps="git push"
+alias gil="git log"
+alias gst="git status"
 
+#Listing alias to see what is on my computer
+alias l='ls -CF --color=auto'
+alias ls='ls --color=auto'
+alias la='ls -A --color=auto'
+alias lsv='ls -v --color=auto'
+alias lsd='ls -l --color=auto'
+alias ll='ls -alF --color=auto'
+
+#I always have problems finding file
 findFile(){
-find ./ -name "$1"
+	find ./ -name "$1"
 }
 alias fn=findFile
-
+#opens a folder in mint so, why not?
 alias o="xdg-open ."
 export TZ="UTC"
