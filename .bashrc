@@ -18,6 +18,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~"
 alias -- -="cd -"
+alias h="cd -" #reference to h command from VIM
 #Git alias to make my life easier
 alias grh="git reset --hard"
 alias gc="git clone "
@@ -29,9 +30,10 @@ alias grm="git rm"
 alias gcm="git commit"
 alias gcl="git clone"
 alias gpl="git pull"
-#alias gps="git push"
+alias gps="git push"
 alias gil="git log"
 alias gst="git status"
+alias gdf="git diff"
 
 #Listing alias to see what is on my computer
 alias l='ls -CF --color=auto'
@@ -40,6 +42,10 @@ alias la='ls -A --color=auto'
 alias lsv='ls -v --color=auto'
 alias lsd='ls -l --color=auto'
 alias ll='ls -alF --color=auto'
+
+#Python server
+alias server='python -m SimpleHTTPServer 8052'
+
 
 #I always have problems finding file
 findFile(){
