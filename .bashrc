@@ -34,6 +34,7 @@ alias gps="git push"
 alias gil="git log"
 alias gst="git status"
 alias gdf="git diff"
+alias gf="git fetch"
 
 #Listing alias to see what is on my computer
 alias l='ls -CF --color=auto'
