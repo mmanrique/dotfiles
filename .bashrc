@@ -7,8 +7,12 @@
 #export ANT_HOME="/opt/apache-ant-../"
 #export ANT_OPTS=-Xmx768m
 #export M2_HOME="/opt/maven-../"
+#export PLAY_HOME="/opt/play-..."
+#export PHANTOM_HOME="/opt/phantomjs-..."
+#export CASPER_HOME="/opt/casperjs"
+#export ANDROID_HOME="/opt/android-sdk-linux"
 
-export PATH=$PATH:$JAVA_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin
+export PATH=$PATH:$JAVA_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$PLAY_HOME:$PHANTOM_HOME/bin:CASPER_HOME/bin:$ANDROID_HOME
 #tools I use
 
 # Easier navigation: .., ..., ...., ....., ~ and -
@@ -31,10 +35,12 @@ alias gcm="git commit"
 alias gcl="git clone"
 alias gpl="git pull"
 alias gps="git push"
-alias gil="git log"
+alias gl="git log"
 alias gst="git status"
 alias gdf="git diff"
 alias gf="git fetch"
+alias gcp="git cherry-pick"
+
 
 #Listing alias to see what is on my computer
 alias l='ls -CF --color=auto'
