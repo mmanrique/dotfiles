@@ -3,11 +3,12 @@
 
 #export MAVEN_HOME="/opt/maven-../"
 #export MAVEN_OPTS="-Xmx2G -Xms2G -XX:PermSize=128M -XX:MaxPermSize=256m"
-
+#export JAVA_OPTS="-XX:MaxPermSize=512m"
 #export ANT_HOME="/opt/apache-ant-../"
 #export ANT_OPTS=-Xmx768m
 #export M2_HOME="/opt/maven-../"
 #export PLAY_HOME="/opt/play-..."
+#export SCALA_HOME="/opt/scala-2.10.3"
 #export PHANTOM_HOME="/opt/phantomjs-..."
 #export CASPER_HOME="/opt/casperjs"
 #export ANDROID_HOME="/opt/android-sdk-linux"
