@@ -1,0 +1,7 @@
+#I always have problems finding file
+findFile(){
+	find ./ -name "$1"
+}
+alias fn=findFile
+#opens a folder in mint so, why not?
+alias o="xdg-open ."
