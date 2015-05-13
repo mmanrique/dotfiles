@@ -4,4 +4,12 @@ findFile(){
 }
 alias fn=findFile
 #opens a folder in mint so, why not?
-alias o="xdg-open ."
+alias o="open ."
+
+alias dependencies="mvn clean install -Pdependencies -DskipTests"
+
+
+gitFindCommits(){
+	git log --all --grep="$1"
+}
+alias gfn=gitFindCommits

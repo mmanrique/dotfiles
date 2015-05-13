@@ -10,12 +10,12 @@ alias h="cd -" #reference to h command from VIM
 
 
 #Listing alias to see what is on my computer
-alias l='ls -CF --color=auto'
-alias ls='ls --color=auto'
-alias la='ls -A --color=auto'
-alias lsv='ls -v --color=auto'
-alias lsd='ls -l --color=auto'
-alias ll='ls -alF --color=auto'
+#alias l='ls -CF --color=auto'
+#alias ls='ls --color=auto'
+#alias la='ls -A --color=auto'
+#alias lsv='ls -v --color=auto'
+#alias lsd='ls -l --color=auto'
+#alias ll='ls -alF --color=auto'
 
 #Python stuff
 alias server='python -m SimpleHTTPServer 8052'
