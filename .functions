@@ -3,6 +3,12 @@ findFile(){
 	find ./ -name "$1"
 }
 alias fn=findFile
+
+historygrep(){
+	history | grep "$1"
+}
+
+alias his= historygrep 
 #opens a folder in mint so, why not?
 alias o="open ."
 
@@ -13,3 +19,10 @@ gitFindCommits(){
 	git log --all --grep="$1"
 }
 alias gfn=gitFindCommits
+
+
+connectRemote(){
+	psql -h uatdb"$1" -d "$2" -U readonly
+}
+
+alias remote=connectRemote

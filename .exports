@@ -1,3 +1,9 @@
+#export DOTFILES=$HOME/.dotfiles
+#for file in $DOTFILES/.{git-aliases,exports,aliases,functions,extras,personal}; do
+#		[ -r "$file" ] && [ -f "$file" ] && source "$file"
+#done
+#unset file
+
 #export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home"
 #export MAVEN_HOME="/opt/apache-maven-3.2.3"
 #export MAVEN_OPTS="-Xmx2G -Xms2G -XX:PermSize=128M -XX:MaxPermSize=256m"
@@ -6,10 +12,10 @@
 #export ANT_OPTS=-Xmx768m
 #export M2_HOME="/opt/apache-maven-3.2.3"
 #export PLAY_HOME="/home/mmanrique/development/play-2.1.1-RC1"
-#export SCALA_HOME="/opt/scala-2.10.3"
+#export SCALA_HOME="/opt/scala-2.11.6"
 #export PHANTOM_HOME="/home/mmanrique/development/phantomjs-1.9.0-linux-x86_64"
 #export CASPER_HOME="/home/mmanrique/casperjs"
 #export ANDROID_HOME="/home/mmanrique/development/android-sdk-linux"
 
 #export PATH=$PATH:$JAVA_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$M2_HOME/bin
-#export PATH=$PATH:$PLAY_HOME:$PHANTOM_HOME/bin:CASPER_HOME/bin:$ANDROID_HOME:$SCALA_HOME/bin
+#export PATH=$PATH:$SCALA_HOME/bin
